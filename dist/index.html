@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea de Selección de Wason</title>
+    <style>
+        body {
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+          background-color: #f0f2f5;
+          color: #1c1e21;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          margin: 0;
+        }
+        #app-container {
+          background-color: white;
+          padding: 2rem;
+          border-radius: 8px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          max-width: 600px;
+          text-align: center;
+        }
+        .task-container {
+          margin-top: 1.5rem;
+        }
+        .instructions {
+          text-align: left;
+          margin-bottom: 2rem;
+          line-height: 1.6;
+          font-size: 1.1rem;
+        }
+        .items-grid {
+          display: flex;
+          gap: 1rem;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+        .item {
+          width: 100px;
+          height: 140px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 3rem;
+          font-weight: bold;
+          border: 2px solid #ccc;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: all 0.2s ease-in-out;
+          user-select: none; /* Evita seleccionar el texto al hacer clic */
+        }
+        .item.emoji {
+            font-size: 5rem; /* Emojis más grandes */
+            height: 100px;
+            border: none;
+        }
+        .item:hover {
+          border-color: #007bff;
+          transform: translateY(-5px);
+        }
+        .item.selected {
+          border-color: #007bff;
+          background-color: #e7f3ff;
+          transform: scale(1.05);
+        }
+        .button-group {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 1rem;
+        }
+        button {
+          padding: 10px 20px;
+          font-size: 1rem;
+          cursor: pointer;
+          border-radius: 5px;
+          border: 1px solid transparent;
+          margin: 0 5px;
+        }
+        .switch-button {
+          background-color: #e4e6eb;
+          color: #050505;
+        }
+        .switch-button.active {
+            background-color: #007bff;
+            color: white;
+        }
+        .verify-button {
+          margin-top: 2rem;
+          background-color: #28a745;
+          color: white;
+          font-weight: bold;
+        }
+        .feedback {
+          margin-top: 1rem;
+          font-size: 1.2rem;
+          font-weight: bold;
+          height: 2rem;
+        }
+        .feedback.correct {
+          color: #28a745;
+        }
+        .feedback.incorrect {
+          color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+<div id="app-container"></div>
+<script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
