@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <option name="separateProdTestSources" value="true" />
+    <profile name="sbt 1" modules="experimento-de-la-tarea-de-Wason" />
+    <profile name="sbt 2" modules="experimento-de-la-tarea-de-Wason.main,experimento-de-la-tarea-de-Wason.test">
+      <parameters>
+        <parameter value="-scalajs" />
+      </parameters>
+    </profile>
+  </component>
+</project>
