@@ -14,7 +14,7 @@ requisitos:
 
 -nix-shell -p deno
 
--deno run -A --watch https://deno.land/std/http/file_server.ts dist/
+-deno run -A --watch https://deno.land/std/http/file_server.ts docs/
 
 -desplegamos la página de manera local
 
